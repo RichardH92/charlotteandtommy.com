@@ -35,8 +35,6 @@
 
   <link rel="stylesheet" href="/stylesheets/app.css">
   <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700|Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
 </head>
 <body>
   @yield('content')
