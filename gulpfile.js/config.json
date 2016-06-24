@@ -6,7 +6,7 @@
 
   "tasks": {
     "browserSync": {
-      "proxy": "localhost:8000"
+      "proxy": "charlotteandtommy.dev"
     },
 
     "static": {
@@ -27,6 +27,7 @@
       },
       "extractSharedJs": false
     },
+
     "css": {
       "src": "stylesheets",
       "dest": "stylesheets",
@@ -72,7 +73,7 @@
     },
 
     "production" : {
-      "rev": true
+      "rev": false
     }
   }
 }

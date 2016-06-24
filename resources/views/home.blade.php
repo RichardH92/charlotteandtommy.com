@@ -161,7 +161,9 @@
         </div>
 
         <div class="rsvp-yes -show">
-          <form action="" method="post">
+          <form action="/rsvp" method="post" autocomplete="off">
+            <input type="hidden" name="_method" value="POST">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <fieldset>
               <input type="hidden" name="accept" value="yes">
               <div class="form-row -name">

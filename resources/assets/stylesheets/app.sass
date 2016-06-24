@@ -10,6 +10,22 @@
   top: 50%
   transform: translate(-50%, -50%)
 
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+  &:input-placeholder
+    @content
+
 =row
   +clear-fix
   float: left
@@ -47,14 +63,6 @@
   opacity: 1
   pointer-events: auto
   visibility: visible
-
-=placeholder
-  &::-webkit-input-placeholder,
-  &:-moz-placeholder,
-  &::-moz-placeholder,
-  &:-ms-input-placeholder,
-  &:input-placeholder
-    @content
 
 
 // Varibles
@@ -432,6 +440,9 @@ textarea,
   text-align: center
   width: 100%
   +transition
+
+  +placeholder
+    color: #aaa
 
   &:focus
     border-bottom: 2px solid darken($header-blue, 40%)

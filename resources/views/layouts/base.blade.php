@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Charlotte and Tommy</title>
-  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="/stylesheets/app.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700|Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
@@ -38,6 +38,6 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="javascripts/app.js"></script>
+  <script src="/javascripts/app.js"></script>
 </body>
 </html>

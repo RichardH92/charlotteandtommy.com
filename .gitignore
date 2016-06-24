@@ -1,6 +1,10 @@
 /vendor
 /node_modules
+/public/images
+/public/stylesheets
+/public/javascripts
 /public/storage
 Homestead.yaml
 Homestead.json
+npm-debug.log
 .env
