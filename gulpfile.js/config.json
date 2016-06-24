@@ -39,7 +39,7 @@
     },
 
     "html": {
-      "src": "html",
+      "src": "views",
       "extensions": ["php"]
     },
 
