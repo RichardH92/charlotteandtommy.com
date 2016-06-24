@@ -1,0 +1,557 @@
+// Imports
+@import "normalize"
+@import "vendor/magnificent-popup"
+
+// Mixins
+=absolute-center
+  display: block
+  left: 50%
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+
+=row
+  +clear-fix
+  float: left
+  position: relative
+  width: 100%
+
+=clear-fix
+  &:before,
+  &:after
+    content: ""
+    display: table
+
+  &:after
+    clear: both
+
+=font-cursive
+  font-family: 'Tangerine', cursive
+
+=font-sans
+  font-family: 'Noto Sans', sans-serif
+
+=transition
+  transition: all 0.1s ease-out
+
+=breakpoint($width)
+  @media (min-width: $width)
+    @content
+
+=hidden-transition-content
+  opacity: 0
+  pointer-events: none
+  visibility: hidden
+
+=visible-transition-content
+  opacity: 1
+  pointer-events: auto
+  visibility: visible
+
+=placeholder
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &:input-placeholder
+    @content
+
+
+// Varibles
+$white        : #e8edf3
+$header-green : #c9d8c5
+$header-blue  : #a9b6bf
+$black        : #173e43
+
+// Base Styles
+html,
+body
+  background: $white
+  box-sizing: border-box
+  color: $black
+  font-size: 14px
+  font-weight: 300
+  letter-spacing: 1px
+  line-height: 1.5
+  margin: 0
+  min-height: 100%
+  padding: 0
+  +font-sans
+
+  *
+    box-sizing: border-box
+
+h1, h2, h3, h4
+  +font-cursive
+  font-weight: 100
+  letter-spacing: 0
+  line-height: 1
+  margin: 0 0 0.4em
+
+h1
+  font-size: 66px
+  font-weight: bold
+  margin-top: 76px
+  margin-bottom: 0
+
+  +breakpoint('600px')
+    font-size: 100px
+
+  +breakpoint('1024px')
+    font-size: 136px
+
+  +breakpoint('1280px')
+    font-size: 156px
+
+  em
+    display: block
+    font-size: 30px
+    font-weight: bold
+    line-height: 30px
+    position: relative
+
+    +breakpoint('600px')
+      font-size: 58px
+
+h2
+  font-size: 60px
+
+h3
+  font-size: 52px
+
+.toggle-menu
+  border: 0
+  background: none
+  color: #fff
+  cursor: pointer
+  font-weight: bold
+  height: 62px
+  left: 0
+  letter-spacing: 2
+  position: absolute
+  text-transform: uppercase
+  width: 100%
+
+  +breakpoint('808px')
+    display: none
+
+.toggle-menu-icon
+  width: 60px
+  height: 45px
+  position: absolute
+  margin: 50px auto
+  transform: rotate(0deg)
+  +transition
+  cursor: pointer
+  top: -36px
+  left: 50%
+  margin-left: -30px
+
+  span
+    display: block
+    position: absolute
+    height: 6px
+    width: 100%
+    background: #fff
+    border-radius: 9px
+    opacity: 1
+    left: 0
+    transform: rotate(0deg)
+    +transition
+
+  span:nth-child(1)
+    top: 0px
+
+  span:nth-child(2),
+  span:nth-child(3)
+    top: 14px
+
+  span:nth-child(4)
+    top: 28px
+
+  .-active & span:nth-child(1)
+    top: 18px
+    width: 0%
+    left: 50%
+
+  .-active & span:nth-child(2)
+    transform: rotate(45deg)
+
+  .-active & span:nth-child(3)
+    transform: rotate(-45deg)
+
+  .-active & span:nth-child(4)
+    top: 18px
+    width: 0%
+    left: 50%
+
+header
+  background: rgba($black, 0.5)
+  height: 60px
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 101
+  +transition
+
+  &.-active
+    background: rgba($black, 1)
+
+  +breakpoint('808px')
+    background: rgba($black, 0.5)
+    display: block
+    height: auto
+
+nav
+  background: rgba($black, 0)
+  +hidden-transition-content
+  bottom: 0
+  left: 0
+  position: fixed
+  right: 0
+  text-align: center
+  top: 60px
+  +transition
+
+  .-active &
+    background: rgba($black, 1)
+    +visible-transition-content
+
+  +breakpoint('808px')
+    position: absolute
+    position: relative
+    top: auto
+    left: auto
+    right: auto
+    bottom: auto
+    +visible-transition-content
+
+  a
+    color: $white
+    display: inline-block
+    font-size: 16px
+    font-weight: bold
+    height: 14vh
+    letter-spacing: 3px
+    line-height: 14vh
+    padding: 0
+    text-decoration: none
+    text-transform: uppercase
+    width: 100%
+    +transition
+
+    +breakpoint('808px')
+      font-size: 12px
+      height: auto
+      line-height: inherit
+      padding: 2em
+      width: auto
+
+    &:hover
+      background: $white
+      color: $black
+
+.section
+  +row
+
+  &.-hero
+    background-image: url(/images/hero.jpg)
+    background-size: cover
+    background-position: 50% 50%
+    color: #fff
+    min-height: 330px
+    text-shadow: 1px 2px 4px rgba(#000, 0.5)
+
+    +breakpoint('600px')
+      min-height: 600px
+
+    +breakpoint('1280px')
+      height: 100vh
+
+  .date
+    // background: $header-blue
+    border-radius: 25px
+    display: inline-block
+    font-size: 12px
+    font-weight: bold
+    letter-spacing: 2px
+    position: relative
+    text-shadow: 1px 2px 3px rgba(#000, 0.5)
+    top: 4px
+
+    +breakpoint('600px')
+      font-size: 14px
+
+  &.-photos
+    background: #e2e2e2
+    padding: 40px 0
+
+.wrap
+  margin: 0 auto
+  text-align: center
+
+  &.-thin
+    max-width: 720px
+
+.button
+  background: darken($header-blue, 50%)
+  border-radius: 30px
+  border: 1px solid darken($header-blue, 50%)
+  color: #fff
+  cursor: pointer
+  display: inline-block
+  font-weight: bold
+  letter-spacing: 2px
+  padding: 1em 2em
+  text-decoration: none
+  text-transform: uppercase
+  +transition
+
+  &:focus
+    outline-style: none
+
+  &:hover
+    background: darken($header-blue, 60%)
+
+  &.-light
+    background: darken($header-blue, 10%)
+    border: 1px solid darken($header-blue, 10%)
+
+    &:hover
+      background: darken($header-blue, 20%)
+      border: 1px solid darken($header-blue, 20%)
+
+  &.-add-more
+    font-size: 10px
+    padding: 0.6em 1em
+    margin-top: 10px
+
+.rsvp-buttons
+  button
+    width: 140px
+    font-size: 11px
+
+    +breakpoint('370px')
+      font-size: 12px
+      width: 168px
+
+    +breakpoint('560px')
+      width: 260px
+
+  button:first-child
+    border-bottom-right-radius: 0
+    border-top-right-radius: 0
+  button:last-child
+    border-bottom-left-radius: 0
+    border-top-left-radius: 0
+
+p
+  margin-bottom: 2em
+  text-transform: uppercase
+
+.col
+  padding: 40px
+  width: 100%
+
+  &.-half
+    min-height: 352px
+    width: 100%
+
+    +breakpoint('600px')
+      float: left
+      width: 50%
+
+  &.-white
+    background-color: $white
+
+  &.-blue
+    background-color: $header-blue
+
+  &.-green
+    background-color: $header-green
+
+.accommodations
+  +row
+  padding-bottom: 30px
+  padding-top: 30px
+
+  .accommodation
+    margin-top: 30px
+    display: inline-block
+    width: 45%
+
+.centered
+  +absolute-center
+
+footer
+  +row
+  padding: 80px
+
+label
+  cursor: pointer
+  display: block
+  font-size: 11px
+  font-weight: bold
+  letter-spacing: 2px
+  margin-bottom: 20px
+  text-align: center
+  text-transform: uppercase
+  width: 100%
+  +transition
+
+  +breakpoint('520px')
+    font-size: 12px
+
+fieldset
+  background: lighten($white, 5%)
+  border-radius: 3px
+  border: 0
+  margin: 40px auto
+  max-width: 92%
+  padding: 30px 20px
+  width: 100%
+
+  +breakpoint('800px')
+    padding: 50px
+    max-width: 80%
+
+input[type="number"],
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+textarea,
+  +font-cursive
+  background: none
+  border: 0
+  border-bottom: 2px solid darken($header-blue, 20%)
+  border-radius: 2px
+  font-size: 32px
+  line-height: 1.25
+  padding: 0 5px 5px
+  text-align: center
+  width: 100%
+  +transition
+
+  &:focus
+    border-bottom: 2px solid darken($header-blue, 40%)
+    outline: none
+
+.form-row
+  +row
+  margin-bottom: 40px
+  text-align: left
+  position: relative
+  text-align: center
+
+  &.-name input
+    font-size: 30px
+
+    +breakpoint('800px')
+      font-size: 48px
+
+  &.-food input
+    +font-cursive
+    font-size: 40px
+    width: 60px
+
+    +breakpoint('800px')
+      font-size: 48px
+      width: 70px
+
+  &.-food label
+    height: 40px
+    margin-bottom: 0
+    text-align: center
+
+.form-col
+  display: inline-block
+  padding: 10px
+  width: 31%
+  vertical-align: top
+
+.-rsvp
+  padding: 80px 0px
+
+.rsvp-yes,
+.rsvp-no
+  +hidden-transition-content
+  float: left
+  margin-bottom: 0
+  max-height: 0
+
+  &.-show
+    +visible-transition-content
+    max-height: 100vh
+
+// Gallery
+.photos-list
+  list-style: none
+  margin: 0 auto
+  flex-flow: row wrap
+  display: flex
+  padding: 0.5vw
+  font-size: 0
+  align-items: center
+  max-width: 800px
+
+  > div
+    flex: auto
+    width: 200px
+    flex-basis: 31%
+    padding: 10px
+
+    +breakpoint('804px')
+      padding: 14px
+
+    +breakpoint('1024px')
+      padding: 20px
+
+    &:nth-child(even)
+      img:hover
+        transform: scale(1.03) rotate(2deg)
+
+    &:nth-child(odd)
+      img:hover
+        transform: scale(1.03) rotate(-1.5deg)
+
+    img
+      display: block
+      border: 10px solid #fff
+      height: auto
+      width: 100%
+      box-shadow: 0 0 5px rgba($black, 0.1)
+      transform: scale(1)
+      +transition
+
+// Vendor
+.mfp-bg
+  background: #fff
+
+.mfp-close
+  color: $black
+
+.mfp-no-margins img.mfp-img
+  padding: 0
+
+.mfp-no-margins .mfp-figure:after
+  top: 0
+  bottom: 0
+
+.mfp-no-margins .mfp-container
+  padding: 0
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg
+  opacity: 0
+  backface-visibility: hidden
+  transition: all 0.3s ease-out
+
+.mfp-with-zoom.mfp-ready .mfp-container
+    opacity: 1
+.mfp-with-zoom.mfp-ready.mfp-bg
+    opacity: 0.8
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg
+  opacity: 0
