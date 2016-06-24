@@ -216,7 +216,9 @@
           </form>
         </div>
         <div class="rsvp-no">
-          <form action="" method="POST">
+          <form action="/rsvp" method="post" autocomplete="off">
+            <input type="hidden" name="_method" value="POST">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <fieldset>
               <h3>We are sorry to miss you!</h3>
               <input type="hidden" name="accept" value="no">
