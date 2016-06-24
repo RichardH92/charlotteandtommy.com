@@ -24,29 +24,26 @@ export default class Rsvp {
   }
 
   toggleBlock(e) {
-    let target = e.target
-    let choice = target.dataset.to
+    let target        = e.target
+    let nextChoice    = target.dataset.to
+    let currentChoice = this.current.choice
 
-    if (choice == this.current.choice) return
+    if (nextChoice == currentChoice) return
 
     this.current.button.classList.add('-light')
     target.classList.remove('-light')
 
-    const currentChoice = this.current.choice
-
     this.rsvpBlocks[currentChoice].classList.remove('-show')
-    this.rsvpBlocks[choice].classList.add('-display-block')
+    this.rsvpBlocks[nextChoice].classList.add('-display-block')
 
     setTimeout(() => {
       this.rsvpBlocks[currentChoice].classList.remove('-display-block')
-    }, 100)
-    setTimeout(() => {
-      this.rsvpBlocks[choice].classList.add('-show')
+      this.rsvpBlocks[nextChoice].classList.add('-show')
     }, 200)
 
     this.current = {
-      choice : choice,
-      button : this.buttons[choice == 'yes' ? 0 : 1]
+      choice : nextChoice,
+      button : this.buttons[nextChoice == 'yes' ? 0 : 1]
     }
   }
 }

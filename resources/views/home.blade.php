@@ -186,6 +186,7 @@
             <input type="hidden" name="_method" value="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <fieldset>
+              <h3>We can&rsquo;t wait to see you!</h3>
               <input type="hidden" name="accept" value="yes">
               <div class="form-row -name">
                 <label for="name">Full Name and Guest</label>
