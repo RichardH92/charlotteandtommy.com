@@ -24,7 +24,7 @@
       <a href="#accommodations">Accommodations</a>
       <a href="#registries">Registries</a>
       <a href="#photos">Photos</a>
-      <a href="#photos">RSVP</a>
+      <a href="#rsvp">RSVP</a>
     </nav>
   </header>
 

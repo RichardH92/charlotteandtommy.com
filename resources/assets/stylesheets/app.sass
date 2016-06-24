@@ -26,12 +26,6 @@
   &:input-placeholder
     @content
 
-=row
-  +clear-fix
-  float: left
-  position: relative
-  width: 100%
-
 =clear-fix
   &:before,
   &:after
@@ -40,6 +34,12 @@
 
   &:after
     clear: both
+
+=row
+  +clear-fix
+  float: left
+  position: relative
+  width: 100%
 
 =font-cursive
   font-family: 'Tangerine', cursive
@@ -126,6 +126,7 @@ h2
 
 h3
   font-size: 52px
+  font-weight: bold
 
 .toggle-menu
   border: 0
@@ -263,6 +264,12 @@ nav
 .section
   +row
 
+  &.-accommodations
+    padding: 60px 0
+
+    +breakpoint('800px')
+      padding: 80px 0
+
   &.-hero
     background-image: url(/images/hero.jpg)
     background-size: cover
@@ -293,7 +300,20 @@ nav
 
   &.-photos
     background: #e2e2e2
-    padding: 40px 0
+    padding: 60px 0
+
+    +breakpoint('800px')
+      padding: 80px 0
+
+  &.-registries
+    background: $black
+    padding: 60px 0
+
+    +breakpoint('800px')
+      padding: 80px 0
+
+  &.-rsvp
+    padding: 80px 0px
 
 .wrap
   margin: 0 auto
@@ -350,6 +370,7 @@ nav
   button:first-child
     border-bottom-right-radius: 0
     border-top-right-radius: 0
+
   button:last-child
     border-bottom-left-radius: 0
     border-top-left-radius: 0
@@ -381,8 +402,6 @@ p
 
 .accommodations
   +row
-  padding-bottom: 30px
-  padding-top: 30px
 
   .accommodation
     margin-top: 30px
@@ -421,7 +440,7 @@ fieldset
   width: 100%
 
   +breakpoint('800px')
-    padding: 50px
+    padding: 50px 50px 30px
     max-width: 80%
 
 input[type="number"],
@@ -481,19 +500,17 @@ textarea,
   width: 31%
   vertical-align: top
 
-.-rsvp
-  padding: 80px 0px
-
 .rsvp-yes,
 .rsvp-no
   +hidden-transition-content
-  float: left
+  display: none
   margin-bottom: 0
-  max-height: 0
+
+  &.-display-block
+    display: block
 
   &.-show
     +visible-transition-content
-    max-height: 100vh
 
 // Gallery
 .photos-list
@@ -535,6 +552,28 @@ textarea,
       transform: scale(1)
       +transition
 
+.registries-list
+  max-width: 1600px
+  text-align: center
+  width: 100%
+
+  a
+    display: inline-block
+    vertical-align: middle
+    padding: 60px 20px
+    width: 49%
+
+    +breakpoint('800px')
+      width: 24%
+
+    img
+      max-width: 100%
+
+.and-spacer
+  display: block
+  margin: 20px 0
+  font-style: italic
+
 // Vendor
 .mfp-bg
   background: #fff
@@ -566,3 +605,4 @@ textarea,
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg
   opacity: 0
+

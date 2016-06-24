@@ -63,6 +63,25 @@
     </div>
   </section>
 
+  <section class="section -registries" id="registries">
+    <div class="wrap">
+      <div class="registries-list">
+        <a href="http://www.crateandbarrel.com/gift-registry/thomas-marshall-and-charlotte-pince/r5495650">
+          <img src="/images/crate.png" alt="">
+        </a>
+        <a href="https://secure.williams-sonoma.com/registry/vpxfvkqcvr/registry-list.html">
+          <img src="/images/ws.png" alt="">
+        </a>
+        <a href="https://www.anthropologie.com/anthro/registry/listing?registryId=ZGY2MDHMZJMX">
+          <img src="/images/anthropologie.png" alt="">
+        </a>
+        <a href="https://www.amazon.com/wedding/registry/3JO89YMBUJ2FW">
+          <img src="/images/amazon.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section -photos" id="photos">
     <div class="wrap">
       <div class="photos-list" data-module="gallery">
@@ -160,7 +179,7 @@
           <button data-to="yes" class="button">Gladly Accept</button><button data-to="no" class="button -light">Regretfully Decline</button>
         </div>
 
-        <div class="rsvp-yes -show">
+        <div class="rsvp-yes -display-block -show">
           <form action="/rsvp" method="post" autocomplete="off">
             <input type="hidden" name="_method" value="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">

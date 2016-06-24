@@ -31,9 +31,13 @@ export default class Rsvp {
 
     this.current.button.classList.add('-light')
     target.classList.remove('-light')
+    this.rsvpBlocks[this.current.choice].classList.remove('-show', '-display-block')
+    this.rsvpBlocks[choice].classList.add('-display-block')
 
-    this.rsvpBlocks[this.current.choice].classList.remove('-show')
-    this.rsvpBlocks[choice].classList.add('-show')
+    setTimeout(() => {
+      this.rsvpBlocks[choice].classList.add('-show')
+    }, 10)
+
     this.current = {
       choice : choice,
       button : this.buttons[choice == 'yes' ? 0 : 1]

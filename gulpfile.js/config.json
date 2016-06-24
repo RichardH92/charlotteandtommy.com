@@ -44,32 +44,14 @@
     },
 
     "html": {
-      "src": "html"
+      "src": "html",
+      "extensions": ["blade.php"]
     },
 
     "images": {
       "src": "images",
       "dest": "images",
       "extensions": ["jpg", "png", "svg", "gif"]
-    },
-
-    "fonts": {
-      "src": "fonts",
-      "dest": "fonts",
-      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
-    },
-
-    "iconFont": {
-      "src": "icons",
-      "dest": "fonts",
-      "sassDest": "generated",
-      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
-    },
-
-    "svgSprite": {
-      "src": "icons",
-      "dest": "images",
-      "extensions": ["svg"]
     },
 
     "production" : {
