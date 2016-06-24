@@ -194,15 +194,15 @@
               <div class="form-row -food">
                 <div class="form-col">
                   <label for="rib-eye-steak">Rib Eye<br>Steak</label>
-                  <input type="text" class="short" name="beef" placeholder="0" id="rib-eye-steak">
+                  <input type="number" class="short" name="beef" placeholder="0" id="rib-eye-steak">
                 </div>
                 <div class="form-col">
                   <label for="zuccini-ricatto">Zuccini<br>Ricatto</label>
-                  <input type="text" class="short" name="vegetarian" placeholder="0" id="zuccini-ricatto">
+                  <input type="number" class="short" name="vegetarian" placeholder="0" id="zuccini-ricatto">
                 </div>
                 <div class="form-col">
                   <label for="chicken-fingers">Childrens<br>Meal</label>
-                  <input type="text" class="short" name="childrens_meal" placeholder="0" id="chicken-fingers">
+                  <input type="number" class="short" name="childrens_meal" placeholder="0" id="chicken-fingers">
                 </div>
               </div>
               <div class="form-row">
