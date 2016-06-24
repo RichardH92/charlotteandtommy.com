@@ -264,6 +264,24 @@ nav
 .section
   +row
 
+  &.-success
+    height: 100vh
+
+    .wrap
+      margin-top: 16vh
+      max-width: 510px
+      padding: 28px
+
+    h1
+      font-size: 42px
+      margin-bottom: 30px
+
+      +breakpoint('600px')
+        font-size: 60px
+
+      +breakpoint('800px')
+        font-size: 80px
+
   &.-accommodations
     padding: 60px 0
 
@@ -413,7 +431,7 @@ p
 
 footer
   +row
-  padding: 80px
+  padding: 0 60px 60px
 
 label
   cursor: pointer
@@ -505,6 +523,7 @@ textarea,
   +hidden-transition-content
   display: none
   margin-bottom: 0
+  +transition
 
   &.-display-block
     display: block

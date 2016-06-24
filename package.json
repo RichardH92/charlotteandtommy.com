@@ -68,7 +68,6 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.0.0",
-    "lightbox2": "^2.8.2",
     "normalize.css": "^4.0.0",
     "smoothscroll": "^0.2.2"
   }

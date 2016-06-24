@@ -5,9 +5,9 @@ export default class Rsvp {
   }
 
   vars(el) {
-    this.el         = el
-    this.buttons    = document.querySelectorAll('.rsvp-buttons button')
-    this.current    = {
+    this.el      = el
+    this.buttons = document.querySelectorAll('.rsvp-buttons button')
+    this.current = {
       choice : 'yes',
       button : this.buttons[0] // first button
     }
@@ -31,12 +31,18 @@ export default class Rsvp {
 
     this.current.button.classList.add('-light')
     target.classList.remove('-light')
-    this.rsvpBlocks[this.current.choice].classList.remove('-show', '-display-block')
+
+    const currentChoice = this.current.choice
+
+    this.rsvpBlocks[currentChoice].classList.remove('-show')
     this.rsvpBlocks[choice].classList.add('-display-block')
 
     setTimeout(() => {
+      this.rsvpBlocks[currentChoice].classList.remove('-display-block')
+    }, 100)
+    setTimeout(() => {
       this.rsvpBlocks[choice].classList.add('-show')
-    }, 10)
+    }, 200)
 
     this.current = {
       choice : choice,

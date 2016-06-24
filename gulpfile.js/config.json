@@ -1,6 +1,6 @@
 {
   "root": {
-    "src": "./resources/assets",
+    "src": "./resources",
     "dest": "./public"
   },
 
@@ -9,13 +9,8 @@
       "proxy": "charlotteandtommy.dev"
     },
 
-    "static": {
-      "src": "static",
-      "dest": "./"
-    },
-
     "js": {
-      "src": "javascripts",
+      "src": "assets/javascripts",
       "dest": "javascripts",
       "entries": {
         "app": ["./app.js"]
@@ -29,7 +24,7 @@
     },
 
     "css": {
-      "src": "stylesheets",
+      "src": "assets/stylesheets",
       "dest": "stylesheets",
       "autoprefixer": {
         "browsers": ["last 3 version"]
@@ -45,11 +40,11 @@
 
     "html": {
       "src": "html",
-      "extensions": ["blade.php"]
+      "extensions": ["php"]
     },
 
     "images": {
-      "src": "images",
+      "src": "assets/images",
       "dest": "images",
       "extensions": ["jpg", "png", "svg", "gif"]
     },

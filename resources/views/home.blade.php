@@ -1,6 +1,8 @@
 @extends('layouts.base')
 
 @section('content')
+  @include('partials.header')
+
   <section class="section -hero" id="hero">
     <div class="wrap">
       <div class="centered">
@@ -236,4 +238,6 @@
 
     </div>
   </section>
+
+  @include('partials.footer')
 @endsection

@@ -3,11 +3,7 @@ var del    = require('del')
 var config = require('../config')
 
 var cleanTask = function (cb) {
-  del([
-    config.tasks.js.dest,
-    config.tasks.images.dest,
-    config.tasks.css.dest
-  ]).then(function (paths) {
+  del([config.tasks.js.dest, config.tasks.css.dest, config.tasks.images.dest]).then(function (paths) {
     cb()
   })
 }

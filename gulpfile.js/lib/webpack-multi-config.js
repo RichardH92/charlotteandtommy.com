@@ -11,6 +11,8 @@ module.exports = function(env) {
   var jsDest = path.resolve(config.root.dest, config.tasks.js.dest)
   var publicPath = pathToUrl(config.tasks.js.dest, '/')
 
+  console.log(jsSrc, jsDest, publicPath)
+
   var extensions = config.tasks.js.extensions.map(function(extension) {
     return '.' + extension
   })
