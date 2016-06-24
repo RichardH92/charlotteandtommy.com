@@ -38,11 +38,6 @@
       "extensions": ["sass", "scss", "css"]
     },
 
-    "html": {
-      "src": "views",
-      "extensions": ["php"]
-    },
-
     "images": {
       "src": "assets/images",
       "dest": "images",
