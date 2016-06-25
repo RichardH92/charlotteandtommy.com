@@ -43,6 +43,9 @@
     <div class="wrap">
       <div class="accommodations">
         <h3>Accommodations</h3>
+        <div class="wrap -thin">
+          <p>For those flying in, Manchester Airport (MHT) is the closest. Boston is about an hour away, but might have cheaper flights. Flights out of the DC area from BWI are normally the cheapest with Southwest, but Reagan can have flights reasonable flights, too.</p>
+        </div>
         <div class="accommodation">
           <p>
             <strong>The Courtyard Marriott</strong><br>
@@ -67,6 +70,7 @@
 
   <section class="section -registries" id="registries">
     <div class="wrap">
+      <h3>Registries</h3>
       <div class="registries-list">
         <a href="http://www.crateandbarrel.com/gift-registry/thomas-marshall-and-charlotte-pince/r5495650">
           <img src="/images/crate.png" alt="">
@@ -86,6 +90,7 @@
 
   <section class="section -photos" id="photos">
     <div class="wrap">
+      <h3>Photos</h3>
       <div class="photos-list" data-module="gallery">
         <div>
           <a href="/images/gallery/1600/26700483813_54c4cb2826_h.jpg" class="gallery-image">
