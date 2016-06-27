@@ -33,7 +33,7 @@
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
 
-  <link rel="stylesheet" href="/stylesheets/app.css">
+  <link rel="stylesheet" href="/stylesheets/app.css?1">
   <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700|Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
