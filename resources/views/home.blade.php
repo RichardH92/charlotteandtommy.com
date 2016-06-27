@@ -83,6 +83,7 @@
         </a>
         <a href="https://www.amazon.com/wedding/registry/3JO89YMBUJ2FW">
           <img src="/images/amazon.png" alt="">
+          <small><em>Link is now working</em></small>
         </a>
       </div>
     </div>
@@ -203,8 +204,8 @@
                   <input type="number" class="short" name="beef" placeholder="0" id="rib-eye-steak">
                 </div>
                 <div class="form-col">
-                  <label for="zuccini-ricatto">Zuccini<br>Ricatto</label>
-                  <input type="number" class="short" name="vegetarian" placeholder="0" id="zuccini-ricatto">
+                  <label for="zuccini-risotto">Zuccini<br>Risotto</label>
+                  <input type="number" class="short" name="vegetarian" placeholder="0" id="zuccini-risotto">
                 </div>
                 <div class="form-col">
                   <label for="chicken-fingers">Childrens<br>Meal</label>
