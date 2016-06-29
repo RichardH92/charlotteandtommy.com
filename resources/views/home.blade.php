@@ -28,7 +28,7 @@
       </div>
       <div class="col -half -green">
         <h3>Reception</h3>
-        <p class="sub-heading">5:00 PM - 12:00 PM</p>
+        <p class="sub-heading">5:00 PM - Midnight</p>
         <p>
           <strong>The Courtyard Marriott</strong><br>
           70 Constitution Ave<br>
@@ -44,7 +44,7 @@
       <div class="accommodations">
         <h3>Accommodations</h3>
         <div class="wrap -thin">
-          <p>For those flying in, Manchester Airport (MHT) is the closest. Boston is about an hour away, but might have cheaper flights. Flights out of the DC area from BWI are normally the cheapest with Southwest, but Reagan can have flights reasonable flights, too.</p>
+          <p>For those flying in, Manchester Airport (MHT) is the closest. Boston is about an hour away, but might have cheaper flights. Flights out of the DC area from BWI are normally the cheapest with Southwest, but Reagan can have reasonable flights, too.</p>
         </div>
         <div class="accommodation">
           <p>
