@@ -83,7 +83,7 @@
         </a>
         <a href="https://www.amazon.com/wedding/registry/3JO89YMBUJ2FW">
           <img src="/images/amazon.png" alt="">
-          <small><em>Link is now working</em></small>
+          <small><em>Link is now working!</em></small>
         </a>
       </div>
     </div>
