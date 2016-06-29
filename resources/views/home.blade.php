@@ -16,25 +16,33 @@
 
   <section class="section -mass" id="mass">
     <div class="wrap">
-      <div class="col -half -blue">
-        <h3>Mass</h3>
-        <p class="sub-heading">3:00 PM</p>
-        <p>
-          <strong>St. John the Evangelist</strong><br>
-          72 S Main St.<br>
-          Concord, NH 03301<br>
-        </p>
-        <a href="https://www.google.com/maps/dir/''/72+S+Main+St,+Concord,+NH+03301/" class="button">View Map</a>
-      </div>
-      <div class="col -half -green">
-        <h3>Reception</h3>
-        <p class="sub-heading">5:00 PM - Midnight</p>
-        <p>
-          <strong>The Courtyard Marriott</strong><br>
-          70 Constitution Ave<br>
-          Concord, NH 03301<br>
-        </p>
-        <a href="https://www.google.com/maps/dir/''/courtyard+marriott+concord,+nh/" class="button">View Map</a>
+      <div class="flex-row">
+        <div class="col -blue">
+          <h3>Mass</h3>
+          <p class="sub-heading">
+            <strong>3:00 PM</strong><br>
+            We would love everyone to attend our ceremony!
+          </p>
+          <p>
+            <strong>St. John the Evangelist</strong><br>
+            72 S Main St.<br>
+            Concord, NH 03301<br>
+          </p>
+          <a href="https://www.google.com/maps/dir/''/72+S+Main+St,+Concord,+NH+03301/" class="button">View Map</a>
+        </div>
+        <div class="col -green">
+          <h3>Reception</h3>
+          <p class="sub-heading">
+            <strong>5:00 PM - Midnight</strong><br>
+            Open bar during hors d'oeuvres, full cash bar (No CC) from dinner on.
+          </p>
+          <p>
+            <strong>The Courtyard Marriott</strong><br>
+            70 Constitution Ave<br>
+            Concord, NH 03301<br>
+          </p>
+          <a href="https://www.google.com/maps/dir/''/courtyard+marriott+concord,+nh/" class="button">View Map</a>
+        </div>
       </div>
     </div>
   </section>
