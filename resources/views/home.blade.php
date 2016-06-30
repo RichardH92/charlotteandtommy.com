@@ -21,7 +21,7 @@
           <h3>Mass</h3>
           <p class="sub-heading">
             <strong>3:00 PM</strong><br>
-            We would love everyone to attend our ceremony!
+            We would love everyone to witness the Sacrament!
           </p>
           <p>
             <strong>St. John the Evangelist</strong><br>
@@ -34,7 +34,7 @@
           <h3>Reception</h3>
           <p class="sub-heading">
             <strong>5:00 PM - Midnight</strong><br>
-            Open bar during hors d'oeuvres, full cash bar (No CC) from dinner on.
+            Open bar during hors d'oeuvres, full cash bar after.
           </p>
           <p>
             <strong>The Courtyard Marriott</strong><br>
