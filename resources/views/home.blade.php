@@ -34,7 +34,7 @@
           <h3>Reception</h3>
           <p class="sub-heading">
             <strong>5:00 PM - Midnight</strong><br>
-            Open bar during hors d'oeuvres, full cash bar after.
+            Open bar during hors d'oeuvres and wine at dinner. Full cash bar after.
           </p>
           <p>
             <strong>The Courtyard Marriott</strong><br>
@@ -205,6 +205,10 @@
               <div class="form-row -name">
                 <label for="name">Full Name and Guest</label>
                 <input type="text" name="name" id="name" placeholder="Mr. and Mrs. Benjamin Franklin" required>
+              </div>
+              <div class="form-row -name">
+                <label for="email">Your Email or Phone<small>In case we need to get in touch</small></label>
+                <input type="email" name="email" id="email" placeholder="">
               </div>
               <div class="form-row -food">
                 <div class="form-col">
