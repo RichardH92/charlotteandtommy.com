@@ -21,14 +21,14 @@
           <h3>Mass</h3>
           <p class="sub-heading">
             <strong>3:00 PM</strong><br>
-            We would love everyone to witness the Sacrament!
+            The Mass location has changed from St. John's to the following.
           </p>
           <p>
-            <strong>St. John the Evangelist</strong><br>
-            72 S Main St.<br>
-            Concord, NH 03301<br>
+            <strong>Ste. Marie Church</strong><br>
+            133 Wayne St.<br>
+            Manchester, NH 03102<br>
           </p>
-          <a href="https://www.google.com/maps/dir/''/72+S+Main+St,+Concord,+NH+03301/" class="button">View Map</a>
+          <a href="https://www.google.com/maps/dir/''/133+Wayne+St,+Manchester,+NH+03102/" target="_blank" class="button">View Map</a>
         </div>
         <div class="col -green">
           <h3>Reception</h3>
@@ -41,7 +41,7 @@
             70 Constitution Ave<br>
             Concord, NH 03301<br>
           </p>
-          <a href="https://www.google.com/maps/dir/''/courtyard+marriott+concord,+nh/" class="button">View Map</a>
+          <a href="https://www.google.com/maps/dir/''/courtyard+marriott+concord,+nh/" target="_blank" class="button">View Map</a>
         </div>
       </div>
     </div>
