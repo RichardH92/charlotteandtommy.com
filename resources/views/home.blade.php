@@ -41,7 +41,7 @@
             70 Constitution Ave<br>
             Concord, NH 03301<br>
           </p>
-          <a href="https://www.google.com/maps/dir/''/courtyard+marriott+concord,+nh/" target="_blank" class="button">View Map</a>
+          <a href="https://www.google.com/maps/dir/''/70+Constitution+Avenue,+Concord,+NH+03301/" target="_blank" class="button">View Map</a>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@
             Concord, NH 03301<br>
           </p>
           <a href="tel:6032250303" class="button">Call (603) 225-0303</a> <span class="and-spacer">and</span>
-          <a href="https://www.google.com/maps/dir/''/72+S+Main+St,+Concord,+NH+03301/" class="button">View Map</a>
+          <a href="https://www.google.com/maps/dir/''/70+Constitution+Avenue,+Concord,+NH+03301/" class="button">View Map</a>
         </div>
         <div class="accommodation">
           <p>
@@ -70,7 +70,7 @@
             Concord, NH 03301<br>
           </p>
           <a href="tel:6032249534" class="button">Call (603) 224-9534</a> <span class="and-spacer">and</span>
-          <a href="https://www.google.com/maps/dir/''/72+S+Main+St,+Concord,+NH+03301/" class="button">View Map</a>
+          <a href="https://www.google.com/maps/dir/''/172+N+Main+St,+Concord,+NH+03301/" class="button">View Map</a>
         </div>
       </div>
     </div>
@@ -207,7 +207,7 @@
                 <input type="text" name="name" id="name" placeholder="Mr. and Mrs. Benjamin Franklin" required>
               </div>
               <div class="form-row -name">
-                <label for="email">Your Email or Phone<small>In case we need to get in touch</small></label>
+                <label for="email">Your Email or Phone<small>In case we need to get in touch</small></label>i
                 <input type="text" name="email" id="email" placeholder="">
               </div>
               <div class="form-row -food">
