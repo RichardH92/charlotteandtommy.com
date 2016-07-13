@@ -208,7 +208,7 @@
               </div>
               <div class="form-row -name">
                 <label for="email">Your Email or Phone<small>In case we need to get in touch</small></label>
-                <input type="email" name="email" id="email" placeholder="">
+                <input type="text" name="email" id="email" placeholder="">
               </div>
               <div class="form-row -food">
                 <div class="form-col">
