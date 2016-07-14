@@ -41,11 +41,7 @@
             70 Constitution Ave<br>
             Concord, NH 03301<br>
           </p>
-<<<<<<< HEAD
           <a href="https://www.google.com/maps/dir/''/70+Constitution+Avenue,+Concord,+NH+03301/" target="_blank" class="button">View Map</a>
-=======
-          <a href="https://www.google.com/maps/dir/''/courtyard+marriott+concord,+nh/" class="button">View Map</a>
->>>>>>> parent of 84dc9dd... Updates Mass location to Ste. Maries
         </div>
       </div>
     </div>
