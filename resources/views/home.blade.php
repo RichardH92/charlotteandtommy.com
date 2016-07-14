@@ -66,7 +66,7 @@
         <div class="accommodation">
           <p>
             <strong>The Holiday Inn</strong><br>
-            70 Constitution Ave<br>
+            172 N Main St.<br>
             Concord, NH 03301<br>
           </p>
           <a href="tel:6032249534" class="button">Call (603) 224-9534</a> <span class="and-spacer">and</span>
