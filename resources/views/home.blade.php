@@ -207,7 +207,7 @@
                 <input type="text" name="name" id="name" placeholder="Mr. and Mrs. Benjamin Franklin" required>
               </div>
               <div class="form-row -name">
-                <label for="email">Your Email or Phone<small>In case we need to get in touch</small></label>i
+                <label for="email">Your Email or Phone<small>In case we need to get in touch</small></label>
                 <input type="text" name="email" id="email" placeholder="">
               </div>
               <div class="form-row -food">
