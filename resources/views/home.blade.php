@@ -34,7 +34,7 @@
           <h3>Reception</h3>
           <p class="sub-heading">
             <strong>5:00 PM - Midnight</strong><br>
-            Open bar during hors d'oeuvres and wine at dinner. Full cash bar after.
+            Bring your kids! Open bar during hors d'oeuvres and wine at dinner. Full cash bar after.
           </p>
           <p>
             <strong>The Courtyard Marriott</strong><br>
