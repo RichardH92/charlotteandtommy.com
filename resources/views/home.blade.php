@@ -196,7 +196,7 @@
         </div>
 
         <div class="rsvp-yes -display-block -show">
-          <form action="/rsvp" method="post" autocomplete="off">
+          <form action="/success" method="post" autocomplete="off">
             <input type="hidden" name="_method" value="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <fieldset>
